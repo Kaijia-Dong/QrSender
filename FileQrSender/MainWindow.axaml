@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="FileQrSender.MainWindow"
+        Title="文件二维码发送端" Width="980" Height="720" MinWidth="780" MinHeight="580" CanResize="True"
+        DragDrop.AllowDrop="True" DragDrop.DragOver="Window_DragOver" DragDrop.Drop="Window_Drop" Closing="Window_Closing">
+  <Grid Margin="24" ColumnDefinitions="*,400" RowDefinitions="Auto,*,Auto" RowSpacing="10" ColumnSpacing="28">
+    <StackPanel Grid.ColumnSpan="2">
+      <TextBlock Text="文件二维码发送端" FontSize="26" FontWeight="SemiBold"/>
+      <TextBlock Text="选择文件或拖入窗口；二维码会循环播放，供移动端接收。" Opacity="0.7" Margin="0,6,0,18"/>
+    </StackPanel>
+    <StackPanel Grid.Row="1">
+      <Button Content="选择文件" Width="130" Height="38" HorizontalAlignment="Left" Click="ChooseFile_Click"/>
+      <Border BorderBrush="#B8C2CC" BorderThickness="1" CornerRadius="8" Padding="16" Margin="0,18,0,0" Background="#F8FAFC">
+        <StackPanel>
+          <TextBlock Text="当前文件" FontWeight="SemiBold"/>
+          <TextBlock x:Name="FileNameText" Text="尚未选择文件" FontSize="17" TextWrapping="Wrap" Margin="0,8,0,3"/>
+          <TextBlock x:Name="FileInfoText" Text="可把文件直接拖进这个窗口" Opacity="0.7" TextWrapping="Wrap"/>
+        </StackPanel>
+      </Border>
+      <StackPanel Orientation="Horizontal" Spacing="12" Margin="0,20,0,0">
+        <StackPanel Width="150"><TextBlock Text="每帧数据"/><ComboBox x:Name="PayloadSizeCombo" SelectedIndex="1" Margin="0,5,0,0" SelectionChanged="Setting_Changed"><ComboBoxItem Content="300 bytes（高 FPS）"/><ComboBoxItem Content="450 bytes（默认稳定）"/><ComboBoxItem Content="600 bytes（高载荷）"/><ComboBoxItem Content="900 bytes（高密度）"/><ComboBoxItem Content="1200 bytes（最高）"/></ComboBox></StackPanel>
+        <StackPanel Width="160"><TextBlock Text="播放速率"/><ComboBox x:Name="FpsCombo" SelectedIndex="3" Margin="0,5,0,0" SelectionChanged="Setting_Changed"><ComboBoxItem Content="5 FPS（省电）"/><ComboBoxItem Content="8 FPS（稳定）"/><ComboBoxItem Content="10 FPS"/><ComboBoxItem Content="12 FPS（默认稳定）"/><ComboBoxItem Content="15 FPS（兼容）"/><ComboBoxItem Content="18 FPS（高帧率）"/><ComboBoxItem Content="20 FPS（建议 300 bytes）"/><ComboBoxItem Content="24 FPS（实验模式）"/><ComboBoxItem Content="25 FPS（实验模式）"/></ComboBox></StackPanel>
+      </StackPanel>
+      <TextBlock Text="协议：FDQR v1 · Base64URL 二进制帧 · 每 8 个数据帧附加 1 个 XOR 冗余帧 · 每 20 帧重复元数据。默认 450 bytes / 12 FPS；20 FPS 请配合 300 bytes 和近距离大屏。" Opacity="0.7" TextWrapping="Wrap" Margin="0,16,0,0"/>
+    </StackPanel>
+    <Border Grid.Row="1" Grid.Column="1" BorderBrush="#D2D8DE" BorderThickness="1" CornerRadius="10" Padding="16" Background="White">
+      <Grid RowDefinitions="*,Auto">
+        <Image x:Name="QrImage" Stretch="Uniform"/>
+        <TextBlock x:Name="FrameText" Grid.Row="1" HorizontalAlignment="Center" Margin="0,12,0,0" Text="等待文件" Opacity="0.75"/>
+      </Grid>
+    </Border>
+    <Grid Grid.Row="2" Grid.ColumnSpan="2" Margin="0,10,0,0" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+      <StackPanel><ProgressBar x:Name="Progress" Height="12" Minimum="0" Maximum="1"/><TextBlock x:Name="StatusText" Text="请选择文件后开始发送。" Margin="0,7,0,0" Opacity="0.75"/></StackPanel>
+      <Button x:Name="StartButton" Grid.Column="1" Content="开始" Width="90" Height="38" IsEnabled="False" Click="StartButton_Click"/>
+      <Button x:Name="StopButton" Grid.Column="2" Content="停止" Width="90" Height="38" IsEnabled="False" Click="StopButton_Click"/>
+    </Grid>
+  </Grid>
+</Window>

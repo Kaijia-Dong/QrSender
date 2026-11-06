@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EC120994F275558F3E4F537 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A99821983D567041115693 /* QRScannerView.swift */; };
+		49BD2537BB3D1B0E42558689 /* QRFrameDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6603CDCF1579534BF53E9 /* QRFrameDecoder.swift */; };
+		56E7E8A329B56E418E68F8FA /* TransferReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7746D470744648EC5CB14 /* TransferReceiver.swift */; };
+		6F5A278AE79AC0990B7EFCE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280690B4672936E900AF884 /* ContentView.swift */; };
+		944C5A1753538BCE84B65BAF /* FDQRProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A06411CEDD543F214E19E5 /* FDQRProtocol.swift */; };
+		DE71C91942FAB2A9C1730492 /* FileQrReceiverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637AB38047A5BF008FC4D89 /* FileQrReceiverApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0280690B4672936E900AF884 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		23A99821983D567041115693 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		24F88DD5D67ADAEBC766DDCD /* File QR Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File QR Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB6603CDCF1579534BF53E9 /* QRFrameDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRFrameDecoder.swift; sourceTree = "<group>"; };
+		8FC7746D470744648EC5CB14 /* TransferReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferReceiver.swift; sourceTree = "<group>"; };
+		9637AB38047A5BF008FC4D89 /* FileQrReceiverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileQrReceiverApp.swift; sourceTree = "<group>"; };
+		E8AC40C3942296AAEB187A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7A06411CEDD543F214E19E5 /* FDQRProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDQRProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		124571A0C1F7DF1354D6CD3A = {
+			isa = PBXGroup;
+			children = (
+				8271A8FE6F65F7C35A4F4C53 /* Sources */,
+				30EB5ED8EB22E4EDEC6189A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30EB5ED8EB22E4EDEC6189A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F88DD5D67ADAEBC766DDCD /* File QR Receiver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8271A8FE6F65F7C35A4F4C53 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0280690B4672936E900AF884 /* ContentView.swift */,
+				F7A06411CEDD543F214E19E5 /* FDQRProtocol.swift */,
+				9637AB38047A5BF008FC4D89 /* FileQrReceiverApp.swift */,
+				E8AC40C3942296AAEB187A0F /* Info.plist */,
+				4BB6603CDCF1579534BF53E9 /* QRFrameDecoder.swift */,
+				23A99821983D567041115693 /* QRScannerView.swift */,
+				8FC7746D470744648EC5CB14 /* TransferReceiver.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD2674BDF0BFB4DE6485E4A /* FileQrReceiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FA2FA717C8BEDAA9F7460A5 /* Build configuration list for PBXNativeTarget "FileQrReceiver" */;
+			buildPhases = (
+				6A8D4C59A1E9168A5F029532 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileQrReceiver;
+			packageProductDependencies = (
+			);
+			productName = FileQrReceiver;
+			productReference = 24F88DD5D67ADAEBC766DDCD /* File QR Receiver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D113523A5E1AD35377741B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 42E015F06FA33D48184D034D /* Build configuration list for PBXProject "FileQrReceiver" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 124571A0C1F7DF1354D6CD3A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 30EB5ED8EB22E4EDEC6189A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD2674BDF0BFB4DE6485E4A /* FileQrReceiver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A8D4C59A1E9168A5F029532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5A278AE79AC0990B7EFCE9 /* ContentView.swift in Sources */,
+				944C5A1753538BCE84B65BAF /* FDQRProtocol.swift in Sources */,
+				DE71C91942FAB2A9C1730492 /* FileQrReceiverApp.swift in Sources */,
+				49BD2537BB3D1B0E42558689 /* QRFrameDecoder.swift in Sources */,
+				3EC120994F275558F3E4F537 /* QRScannerView.swift in Sources */,
+				56E7E8A329B56E418E68F8FA /* TransferReceiver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA58E189DE63753983935042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4W2S8528H4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kai.fileqrsender.receiver;
+				PRODUCT_NAME = "File QR Receiver";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8ADBCC876B75D4FC6323404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		CE641CD87F4E0AF053002001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		F659B49A903EA54D0E5E4CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4W2S8528H4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kai.fileqrsender.receiver;
+				PRODUCT_NAME = "File QR Receiver";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42E015F06FA33D48184D034D /* Build configuration list for PBXProject "FileQrReceiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8ADBCC876B75D4FC6323404 /* Debug */,
+				CE641CD87F4E0AF053002001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FA2FA717C8BEDAA9F7460A5 /* Build configuration list for PBXNativeTarget "FileQrReceiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA58E189DE63753983935042 /* Debug */,
+				F659B49A903EA54D0E5E4CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D113523A5E1AD35377741B64 /* Project object */;
+}

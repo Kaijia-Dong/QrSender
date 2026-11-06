@@ -1,0 +1,8 @@
+.DS_Store
+/outputs/
+/work/
+bin/
+obj/
+DerivedData/
+xcuserdata/
+*.xcuserstate

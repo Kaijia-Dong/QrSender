@@ -1,0 +1,19 @@
+name: FileQrReceiver
+options:
+  minimumXcodeGenVersion: 2.38.0
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+targets:
+  FileQrReceiver:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kai.fileqrsender.receiver
+        PRODUCT_NAME: File QR Receiver
+        INFOPLIST_FILE: Sources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        TARGETED_DEVICE_FAMILY: "1,2"
