@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1000000000000000000002 /* Assets.xcassets */; };
 		3EC120994F275558F3E4F537 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A99821983D567041115693 /* QRScannerView.swift */; };
 		49BD2537BB3D1B0E42558689 /* QRFrameDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6603CDCF1579534BF53E9 /* QRFrameDecoder.swift */; };
 		56E7E8A329B56E418E68F8FA /* TransferReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7746D470744648EC5CB14 /* TransferReceiver.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB1000000000000000000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0280690B4672936E900AF884 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23A99821983D567041115693 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		24F88DD5D67ADAEBC766DDCD /* File QR Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File QR Receiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,7 @@
 		8271A8FE6F65F7C35A4F4C53 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AB1000000000000000000002 /* Assets.xcassets */,
 				0280690B4672936E900AF884 /* ContentView.swift */,
 				F7A06411CEDD543F214E19E5 /* FDQRProtocol.swift */,
 				9637AB38047A5BF008FC4D89 /* FileQrReceiverApp.swift */,
@@ -65,6 +68,7 @@
 			buildConfigurationList = 7FA2FA717C8BEDAA9F7460A5 /* Build configuration list for PBXNativeTarget "FileQrReceiver" */;
 			buildPhases = (
 				6A8D4C59A1E9168A5F029532 /* Sources */,
+				AB1000000000000000000003 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -104,6 +108,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB1000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1000000000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A8D4C59A1E9168A5F029532 /* Sources */ = {

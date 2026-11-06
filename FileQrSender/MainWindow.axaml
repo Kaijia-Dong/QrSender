@@ -1,4 +1,5 @@
 <Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="FileQrSender.MainWindow"
+        Icon="avares://FileQrSender/Assets/AppIcon.ico"
         Title="文件二维码发送端" Width="980" Height="720" MinWidth="780" MinHeight="580" CanResize="True"
         DragDrop.AllowDrop="True" DragDrop.DragOver="Window_DragOver" DragDrop.Drop="Window_Drop" Closing="Window_Closing">
   <Grid Margin="24" ColumnDefinitions="*,400" RowDefinitions="Auto,*,Auto" RowSpacing="10" ColumnSpacing="28">

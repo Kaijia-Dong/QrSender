@@ -12,6 +12,7 @@ targets:
     sources: [Sources]
     settings:
       base:
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         PRODUCT_BUNDLE_IDENTIFIER: com.kai.fileqrsender.receiver
         PRODUCT_NAME: File QR Receiver
         INFOPLIST_FILE: Sources/Info.plist

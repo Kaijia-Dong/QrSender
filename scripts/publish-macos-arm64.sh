@@ -18,6 +18,7 @@ fi
 rm -rf "$bundle"
 mkdir -p "$bundle/Contents/MacOS" "$bundle/Contents/Resources"
 cp "$root/macos/Info.plist" "$bundle/Contents/Info.plist"
+cp "$root/macos/AppIcon.icns" "$bundle/Contents/Resources/AppIcon.icns"
 # Preserve every managed/native runtime dependency and any symbolic links. The executable remains
 # exactly where macOS requires it: Contents/MacOS/FileQrSender.
 ditto "$publish_dir" "$bundle/Contents/MacOS"
